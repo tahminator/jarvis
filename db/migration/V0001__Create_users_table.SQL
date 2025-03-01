@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS "User" (
+    id UUID PRIMARY KEY,
+    "googleId" VARCHAR(64) UNIQUE NOT NULL,
+    "googleName" VARCHAR(255) NOT NULL,
+    email VARCHAR(256) UNIQUE NOT NULL 
+);
